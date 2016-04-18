@@ -69,14 +69,14 @@ export default class Checkbox extends React.Component {
         className={className}
         style={props.style}
       >
-          <span className={`${prefixCls}-inner`} />
-          <input
-            {...props}
-            className={`${prefixCls}-input`}
-            checked={!!checked}
-            onChange={this.handleChange}
-          />
-        </span>
+        <input
+          {...props}
+          className={`${prefixCls}-input`}
+          checked={!!checked}
+          onChange={this.handleChange}
+        />
+        <span className={`${prefixCls}-inner`} />
+      </span>
     );
   }
 }
